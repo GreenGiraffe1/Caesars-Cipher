@@ -1,3 +1,8 @@
+* {
+    outline: 1px solid red !important;
+    min-height: 100px;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -21,6 +26,7 @@ body {
 .header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
+  background-color: teal;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -35,6 +41,7 @@ body {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+  background-color: teal;
 }
 
 .container-narrow > hr {
