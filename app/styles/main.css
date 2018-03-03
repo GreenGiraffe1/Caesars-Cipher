@@ -1,6 +1,7 @@
 * {
     outline: 1px solid red !important;
-    min-height: 100px;
+    /* min-height: 100px; */
+    /* background-color: tan; */
 }
 
 .browsehappy {
@@ -12,6 +13,7 @@
 
 body {
   padding: 0;
+  /* background-color: brown; */
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -26,7 +28,7 @@ body {
 .header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
-  background-color: teal;
+  /* background-color: teal; */
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -41,7 +43,7 @@ body {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
-  background-color: teal;
+  /* background-color: teal; */
 }
 
 .container-narrow > hr {
