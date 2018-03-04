@@ -1,21 +1,31 @@
-<h4>Generate a coded message to send to a friend.</h4>
-<p>[Instructions will go here]</p>
-<br>
-<br>
-<p>Subject of Message:</p>
-<input type="text" name="subject" value="">
+<div class="intro">
+    <h4>Generate a coded message to send to a friend.</h4>
+    <p>[Instructions will go here]</p>
+</div>
 
-<p>Body of Message:</p>
-<textarea name="msgBody" rows="4" cols="80"></textarea>
+<div class="subject">
+    <p>Subject of Message:</p>
+    <input type="text" name="subject" value="">
+</div>
 
-<p>Passcode:</p>
-<input type="text" name="passcode" value="">
+<div class="body">
+    <p>Body of Message:</p>
+    <textarea name="msgBody" rows="4" cols="80"></textarea>
+</div>
 
-<p>Choose Encryption Type:</p>
-<select class="" name="algoChoice">
-    <option value="aes256">AES-256</option>
-    <option value="twoFish">TwoFish</option>
-</select>
-<br>
-<br>
-<button type="button" name="convert">Convert</button>
+<div class="passcode">
+    <p>Passcode:</p>
+    <input type="text" name="passcode" value="">
+</div>
+
+<div class="encryption">
+    <p>Choose Encryption Type:</p>
+    <select class="" name="algoChoice">
+        <option value="aes256">AES-256</option>
+        <option value="twoFish">TwoFish</option>
+    </select>
+</div>
+
+<div class="convert">
+    <button type="button" name="convert">Convert</button>
+</div>
