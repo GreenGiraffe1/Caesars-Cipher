@@ -3,6 +3,31 @@
     /* min-height: 100px; */
     /* background-color: tan; */
 }
+h4  {
+    margin-bottom: 1em;
+}
+.intro {
+    margin-bottom: 5em;
+}
+.subject, .body, .passcode, .encryption {
+    margin: 2em;
+}
+.cycle {
+    height: 5em;
+    width:10em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .browsehappy {
   margin: 0.2em 0;
