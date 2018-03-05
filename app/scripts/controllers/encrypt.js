@@ -14,4 +14,14 @@ angular.module('secretCipherApp')
       'AngularJS',
       'Karma'
     ];
+    // this.messageComponents = {
+    //     'subject' : '';
+    //     'body' : '';
+    //     'passcode' : '';
+    //     'algorithm' : '';
+    // };
+    this.subject = '[type subject here]';
+    this.message = '[type message here]';
+    this.passcode = '[type passcode here]';
+    this.algorithm = null;
   });
