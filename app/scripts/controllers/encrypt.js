@@ -22,6 +22,5 @@ angular.module('secretCipherApp')
     // };
     this.subject = '[type subject here]';
     this.message = '[type message here]';
-    this.passcode = '[type passcode here]';
     this.algorithm = null;
   });
