@@ -6,11 +6,14 @@
 <div class="subject">
     <p>Subject of Message:</p>
     <input class="subject-input"type="text" name="subject" value="{{encrypt.subject}}">
+    <p>{{encrypt.subject}}</p>
 </div>
 
 <div class="body">
     <p>Body of Message:</p>
     <textarea name="msgBody" rows="4" cols="80">{{encrypt.message}}</textarea>
+    <!-- <p>This will Echo the message above:</p> -->
+    <p>{{encrypt.message}}</p>
 </div>
 
 <div class="character-shift">
