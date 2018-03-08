@@ -23,6 +23,10 @@ angular.module('secretCipherApp')
     this.subject = '[type subject here]';
     this.message = '[type message here]';
     this.algorithm = null;
+    this.testFunc = function() {
+        alert('testFunc fired!!');
+        console.log('testFunc fired!!');
+    };
     // this.charShift = 0;
     this.caesar = function(string,shift) {
         
