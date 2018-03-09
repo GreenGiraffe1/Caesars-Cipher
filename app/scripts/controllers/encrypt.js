@@ -14,10 +14,10 @@ angular.module('secretCipherApp')
         this.algorithm = null;
         this.testFunc = function(arg) {
             // alert('testFunc fired!!');
-            // for(var i = 0; i < arg; i++) {
-            alert('testFunc fired!!');
+            for(var i = 0; i < arg; i++) {
+                alert('testFunc fired!!');
 
-            // }
+            }
             // alert('testFunc fired!!');
             // console.log(this.subject);
             this.subject = 'YOYOYO';
@@ -26,6 +26,12 @@ angular.module('secretCipherApp')
         this.shift = [1,2,3
             ,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26];
         this.charShift = null;
+        // this.passThru = function() {
+        //     this.subject = this.caesar(this.subject,this.charShift);
+        // }
+        this.stringer = function() {
+            this.subject = this.subject + 'HAHA'
+        };
         this.caesar = function(string,shift) {
             
             var stringArray = string.split('');
@@ -77,5 +83,5 @@ angular.module('secretCipherApp')
             return newString;
         
             
-        }
+        };
     });
