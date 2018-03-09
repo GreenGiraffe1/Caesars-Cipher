@@ -47,6 +47,11 @@
         <option value="25">25</option>
         <option value="26">26</option>
     </select>
+
+    <select class="" ng-model="selectedShift" ng-options="x for x in encrypt.shift" name="">
+        
+    </select>
+    <p>The shift you selected is: {{selectedShift}}</p>
 </div>
 
 <div class="convert">

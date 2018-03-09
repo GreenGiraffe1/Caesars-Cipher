@@ -24,10 +24,12 @@ angular.module('secretCipherApp')
     this.message = '[type message here]';
     this.algorithm = null;
     this.testFunc = function() {
-        alert('testFunc fired!!');
+        // alert('testFunc fired!!');
         console.log('testFunc fired!!');
+        console.log(this.subject);
     };
     // this.charShift = 0;
+    this.shift = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26];
     this.caesar = function(string,shift) {
         
         var stringArray = string.split('');
