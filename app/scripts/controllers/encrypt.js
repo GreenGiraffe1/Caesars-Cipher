@@ -9,8 +9,8 @@
  */
 angular.module('secretCipherApp')
     .controller('EncryptCtrl', function () {
-        this.subject = '[type subject here]';
-        this.message = '[type message here]';
+        this.subject = ''//[type subject here]';
+        this.message = ''//[type message here]';
         this.algorithm = null;
         this.testFunc = function() {
             // alert('testFunc fired!!');
