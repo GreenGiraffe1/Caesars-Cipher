@@ -12,10 +12,15 @@ angular.module('secretCipherApp')
         this.subject = ''//[type subject here]';
         this.message = ''//[type message here]';
         this.algorithm = null;
-        this.testFunc = function() {
+        this.testFunc = function(arg) {
             // alert('testFunc fired!!');
-            console.log('testFunc fired!!');
-            console.log(this.subject);
+            // for(var i = 0; i < arg; i++) {
+            alert('testFunc fired!!');
+
+            // }
+            // alert('testFunc fired!!');
+            // console.log(this.subject);
+            this.subject = 'YOYOYO';
         };
         // this.charShift = 0;
         this.shift = [1,2,3
