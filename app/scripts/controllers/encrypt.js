@@ -21,6 +21,7 @@ angular.module('secretCipherApp')
             // alert('testFunc fired!!');
             // console.log(this.subject);
             this.subject = 'YOYOYO';
+            this.pass('Variable Alert');
         };
         // this.charShift = 0;
         this.shift = [1,2,3
@@ -29,6 +30,9 @@ angular.module('secretCipherApp')
         // this.passThru = function() {
         //     this.subject = this.caesar(this.subject,this.charShift);
         // }
+        this.pass = function(thing) {
+            alert(thing);
+        }
         this.stringer = function() {
             this.subject = this.subject + 'HAHA'
         };
