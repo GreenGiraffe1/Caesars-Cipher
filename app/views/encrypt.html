@@ -55,6 +55,6 @@
 </div>
 
 <div class="convert">
-    <button class="cycle" ng-click="encrypt.toggleCrypt()" type="button" name="encrypt">Encrypt</button>
-    <button class="cycle" ng-click="encrypt.testFunc(encrypt.charShift)" type="button" name="decrypt">Decrypt</button>
+    <button class="cycle" ng-click="encrypt.toggleCrypt(encrypt.charShift)" type="button" name="encrypt">Encrypt</button>
+    <button class="cycle" ng-click="encrypt.toggleCrypt(encrypt.charShift * (-1))" type="button" name="decrypt">Decrypt</button>
 </div>

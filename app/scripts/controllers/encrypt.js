@@ -33,9 +33,9 @@ angular.module('secretCipherApp')
         this.pass = function(thing) {
             alert(thing);
         }
-        this.toggleCrypt = function() {
-            this.subject = this.caesar(this.subject,this.charShift);
-            this.message = this.caesar(this.message,this.charShift);
+        this.toggleCrypt = function(num) {
+            this.subject = this.caesar(this.subject,num);
+            this.message = this.caesar(this.message,num);
         }
         this.stringer = function() {
             this.subject = this.subject + 'HAHA'
