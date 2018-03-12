@@ -11,35 +11,13 @@ angular.module('secretCipherApp')
     .controller('EncryptCtrl', function () {
         this.subject = ''//[type subject here]';
         this.message = ''//[type message here]';
-        this.algorithm = null;
-        this.testFunc = function(arg) {
-            // alert('testFunc fired!!');
-            for(var i = 0; i < arg; i++) {
-                alert('testFunc fired!!');
-
-            }
-            // alert('testFunc fired!!');
-            // console.log(this.subject);
-            this.subject = 'YOYOYO';
-            this.pass('Variable Alert');
-        };
-        // this.charShift = 0;
         this.shift = [1,2,3
             ,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26];
         this.charShift = null;
-        // this.passThru = function() {
-        //     this.subject = this.caesar(this.subject,this.charShift);
-        // }
-        this.pass = function(thing) {
-            alert(thing);
-        }
         this.toggleCrypt = function(num) {
             this.subject = this.caesar(this.subject,num);
             this.message = this.caesar(this.message,num);
         }
-        this.stringer = function() {
-            this.subject = this.subject + 'HAHA'
-        };
         this.caesar = function(string,shift) {
             
             var stringArray = string.split('');
@@ -87,7 +65,7 @@ angular.module('secretCipherApp')
 
             // Join the array of new letters into the resultant string
             var newString = newStringArray.join('');
-            alert(newString);
+            // alert(newString);
             return newString;
         
             
