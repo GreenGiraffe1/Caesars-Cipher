@@ -11,6 +11,7 @@
 <div class="body">
     <p>Body of Message:</p>
     <textarea name="msgBody" ng-model="encrypt.message" rows="4" cols="80">{{encrypt.message}}</textarea>
+    <p class="msg-reminder" ng-if="encrypt.message === ''">Must enter a message </p>
 </div>
 
 <div class="character-shift">

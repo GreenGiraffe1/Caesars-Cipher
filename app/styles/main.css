@@ -29,7 +29,10 @@ textarea {
 .subject-input {
     width: 75%;
 }
-
+.msg-reminder {
+    color: red;
+    padding-left: 10%;
+}
 
 
 
