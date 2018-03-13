@@ -15,11 +15,16 @@ angular.module('secretCipherApp')
             ,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26];
         this.charShift = 23;
         this.toggleCrypt = function(num) {
+            if (this.message === '') {
+                alert('Must enter a message before taking that action.');
+                return;
+            }
+
             this.subject = this.caesar(this.subject,num);
             this.message = this.caesar(this.message,num);
         }
         this.caesar = function(string,shift) {
-            
+                        
             var stringArray = string.split('');
             var newStringArray = [];
             
