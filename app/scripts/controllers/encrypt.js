@@ -9,11 +9,11 @@
  */
 angular.module('secretCipherApp')
     .controller('EncryptCtrl', function () {
-        this.subject = ''//[type subject here]';
-        this.message = ''//[type message here]';
+        this.subject = '';
+        this.message = '';
         this.shift = [1,2,3
             ,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26];
-        this.charShift = null;
+        this.charShift = 23;
         this.toggleCrypt = function(num) {
             this.subject = this.caesar(this.subject,num);
             this.message = this.caesar(this.message,num);
@@ -54,7 +54,7 @@ angular.module('secretCipherApp')
                     }
                 }
 
-                // Pass through non-alphabetic characters without change
+                // Append new characters and pass through non-alphabetic ones
                 if (newAsciiNum !== 0) {
                     var newValue = String.fromCharCode(newAsciiNum);
                     newStringArray.push(newValue);
@@ -67,7 +67,5 @@ angular.module('secretCipherApp')
             var newString = newStringArray.join('');
             // alert(newString);
             return newString;
-        
-            
         };
     });
