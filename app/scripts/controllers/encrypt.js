@@ -9,8 +9,8 @@
  */
 angular.module('secretCipherApp')
     .controller('EncryptCtrl', function () {
-        this.subject = '';
-        this.message = '';
+        this.subject = 'Caesar\'s Introduction to "The War in Gaul"';
+        this.message = 'All Gaul [modern France] is divided into three parts, one of which the Belgae inhabit, the Aquitani another, those who in their own language are called Celts, in our Gauls, the third. All these differ from each other in language, customs and laws. The river Garonne separates the Gauls from the Aquitani; the Marne and the Seine separate them from the Belgae.';
         this.shift = [1,2,3
             ,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26];
         this.charShift = 23;
