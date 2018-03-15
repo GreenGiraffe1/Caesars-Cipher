@@ -1,12 +1,14 @@
+html, body {
+    height: 100%;
+}
+
 * {
     /* outline: 1px solid red !important; */
 }
 .site-title {
     opacity: 1;
 }
-h4  {
-    margin-bottom: 1em;
-}
+
 .intro {
     margin-bottom: 5em;
 }
@@ -44,22 +46,20 @@ textarea {
 .trunk {
     /* background-image: url("../images/seamless_parchment_texture_by_fantasystock.jpg");
     background-repeat: repeat; */
-
+    opacity: .8;
+    min-height: calc(100% - 75px - 100px);
+     /* - 20px - 20px); */
+    background-color: tan;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
 }
 
-
-
-
-
-
-
-
-.browsehappy {
+/* .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
-}
+} */
 body {
   padding: 0;
   /* background-image: url("../images/bright-red-wooden-background-scratched-dark-surface-green-spots-mahogany-cherry-colors-512x442.jpg");
@@ -71,28 +71,27 @@ body {
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
+.header, .footer {
   padding-left: 15px;
   padding-right: 15px;
-  opacity: .5;
-  background-color: black;
+  opacity: .75;
+  background-color: #3A1222;
 }
 
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   /* background-color: teal; */
+  min-height: 75px;
 }
 /* Make the masthead heading the same height as the navigation */
-.header h3 {
+/* .header h3 {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
   padding-bottom: 19px;
-}
+} */
 
 /* Custom page footer */
 .footer {
@@ -100,6 +99,7 @@ body {
   color: #777;
   border-top: 1px solid #e5e5e5;
   /* background-color: teal; */
+  min-height: 100px;
 }
 
 .container-narrow > hr {
@@ -107,22 +107,15 @@ body {
 }
 
 /* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
+/* .jumbotron {77
 
 /* Supporting marketing content */
-.marketing {
+/* .marketing {
   margin: 40px 0;
 }
 .marketing p + h4 {
   margin-top: 28px;
-}
+} */
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -131,18 +124,16 @@ body {
   }
 
   /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
+  .header, .footer {
     padding-left: 0;
     padding-right: 0;
   }
   /* Space out the masthead */
   .header {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
   /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
+  /* .jumbotron {
     border-bottom: 0;
-  }
+  } */
 }
