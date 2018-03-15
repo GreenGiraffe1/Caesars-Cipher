@@ -24,17 +24,18 @@ html, body {
     text-align: center;
 }
 input {
-    opacity: .8;
-    background-color: tan;
+    /* opacity: .8;
+    background-color: tan; */
+    background-color: transparent;
 }
 textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
-    /* background-color: transparent; */
-    opacity: .8;
-    background-color: tan;
+    background-color: transparent;
+    /* opacity: .8;
+    background-color: tan; */
 }
 .subject-input {
     width: 75%;
@@ -46,10 +47,11 @@ textarea {
 .trunk {
     /* background-image: url("../images/seamless_parchment_texture_by_fantasystock.jpg");
     background-repeat: repeat; */
-    opacity: .8;
     min-height: calc(100% - 75px - 100px);
      /* - 20px - 20px); */
-    background-color: tan;
+    /* background-color: tan;
+    opacity: .8; */
+    background-color: rgba(210, 180, 140, 0.8);
     /* margin-top: 20px;
     margin-bottom: 20px; */
 }
@@ -74,8 +76,9 @@ body {
 .header, .footer {
   padding-left: 15px;
   padding-right: 15px;
-  opacity: .75;
-  background-color: #3A1222;
+  /* opacity: .75;
+  background-color: #3A1222; */
+  background-color: rgba(58, 18, 34, 0.75);
 }
 
 /* Custom page header */
@@ -84,6 +87,7 @@ body {
   /* margin-bottom: 10px; */
   /* background-color: teal; */
   min-height: 75px;
+  color: tan;
 }
 /* Make the masthead heading the same height as the navigation */
 /* .header h3 {
