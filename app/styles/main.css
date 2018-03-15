@@ -1,6 +1,9 @@
 * {
     /* outline: 1px solid red !important; */
 }
+.site-title {
+    opacity: 1;
+}
 h4  {
     margin-bottom: 1em;
 }
@@ -19,14 +22,17 @@ h4  {
     text-align: center;
 }
 input {
-    background-color: transparent;
+    opacity: .8;
+    background-color: tan;
 }
 textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
-    background-color: transparent;
+    /* background-color: transparent; */
+    opacity: .8;
+    background-color: tan;
 }
 .subject-input {
     width: 75%;
@@ -36,8 +42,8 @@ textarea {
     padding-left: 10%;
 }
 .trunk {
-    background-image: url("../images/seamless_parchment_texture_by_fantasystock.jpg");
-    background-repeat: repeat;
+    /* background-image: url("../images/seamless_parchment_texture_by_fantasystock.jpg");
+    background-repeat: repeat; */
 
 }
 
@@ -56,12 +62,12 @@ textarea {
 }
 body {
   padding: 0;
-  background-image: url("../images/bright-red-wooden-background-scratched-dark-surface-green-spots-mahogany-cherry-colors-512x442.jpg");
-  background-repeat: repeat;
+  /* background-image: url("../images/bright-red-wooden-background-scratched-dark-surface-green-spots-mahogany-cherry-colors-512x442.jpg");
+  background-repeat: repeat; */
 
   /* background-color: tan; */
-  /* background-image: url("../images/seamless_parchment_texture_by_fantasystock.jpg");
-  background-repeat: repeat; */
+  background-image: url("../images/seamless_parchment_texture_by_fantasystock.jpg");
+  background-repeat: repeat;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -70,6 +76,8 @@ body {
 .footer {
   padding-left: 15px;
   padding-right: 15px;
+  opacity: .5;
+  background-color: black;
 }
 
 /* Custom page header */
