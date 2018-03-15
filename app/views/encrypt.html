@@ -4,18 +4,18 @@
 </div>
 
 <div class="subject">
-    <h4>Subject:</h4>
+    <h4><b>Subject:</b></h4>
     <input class="subject-input" ng-model="encrypt.subject" type="text" name="subject" value="{{encrypt.subject}}">
 </div>
 
 <div class="body">
-    <h4>Message:</h4>
-    <textarea name="msgBody" ng-model="encrypt.message" rows="4" cols="80">{{encrypt.message}}</textarea>
+    <h4><b>Message:</b></h4>
+    <textarea name="msgBody" ng-model="encrypt.message" rows="6" cols="80">{{encrypt.message}}</textarea>
     <p class="msg-reminder" ng-if="encrypt.message === ''">Must enter a message </p>
 </div>
 
 <div class="character-shift">
-    <h4>How many letters should the characters be shifted?</h4>
+    <h4><b>How many letters should the characters be shifted?</b></h4>
     <select class="" ng-model="encrypt.charShift" ng-options="x for x in encrypt.shift" name="">
         
     </select>
