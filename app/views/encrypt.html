@@ -1,21 +1,21 @@
 <div class="intro">
-    <h4>Generate a coded message to send to a friend.</h4>
+    <h3>Generate a coded message to send to a friend.</h3>
     <p>[Instructions will go here]</p>
 </div>
 
 <div class="subject">
-    <p>Subject of Message:</p>
+    <h4>Subject:</h4>
     <input class="subject-input" ng-model="encrypt.subject" type="text" name="subject" value="{{encrypt.subject}}">
 </div>
 
 <div class="body">
-    <p>Body of Message:</p>
+    <h4>Message:</h4>
     <textarea name="msgBody" ng-model="encrypt.message" rows="4" cols="80">{{encrypt.message}}</textarea>
     <p class="msg-reminder" ng-if="encrypt.message === ''">Must enter a message </p>
 </div>
 
 <div class="character-shift">
-    <p>How many letters should the characters be shifted?:</p>
+    <h4>How many letters should the characters be shifted?</h4>
     <select class="" ng-model="encrypt.charShift" ng-options="x for x in encrypt.shift" name="">
         
     </select>
