@@ -6,7 +6,7 @@ html, body {
     /* outline: 1px solid red !important; */
 }
 .site-title {
-    opacity: 1;
+    font-family: 'Cormorant SC', serif;
 }
 
 .intro {
