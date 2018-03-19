@@ -29,6 +29,7 @@ input {
     background-color: tan; */
     background-color: transparent;
 }
+
 textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -37,6 +38,10 @@ textarea {
     background-color: transparent;
     /* opacity: .8;
     background-color: tan; */
+}
+textarea, input {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 13.5px;
 }
 .subject-input {
     width: 75%;
@@ -67,6 +72,8 @@ body {
   padding: 0;
   /* background-image: url("../images/bright-red-wooden-background-scratched-dark-surface-green-spots-mahogany-cherry-colors-512x442.jpg");
   background-repeat: repeat; */
+  font-family: 'Quattrocento', serif;
+  /* font-size: 16px; */
 
   /* background-color: tan; */
   background-image: url("../images/seamless_parchment_texture_by_fantasystock.jpg");
