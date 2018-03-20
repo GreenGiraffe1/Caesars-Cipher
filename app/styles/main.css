@@ -14,7 +14,7 @@ html, body {
     margin-bottom: 5em;
 }
 .subject, .body, .character-shift {
-    margin: 2em;
+    margin-top: 2em;
 }
 .cycle {
     height: 5em;
@@ -60,6 +60,8 @@ textarea, input {
     background-color: rgba(210, 180, 140, 0.8);
     /* margin-top: 20px;
     margin-bottom: 20px; */
+    padding-top: 30px;
+    /* padding-bottom: 30px; */
 }
 
 /* .browsehappy {
