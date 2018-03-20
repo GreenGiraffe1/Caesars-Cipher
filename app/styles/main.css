@@ -41,10 +41,6 @@ textarea {
     /* opacity: .8;
     background-color: tan; */
 }
-textarea, input {
-    font-family: 'Inknut Antiqua', serif;
-    font-size: 13.5px;
-}
 .subject-input {
     width: 75%;
 }
