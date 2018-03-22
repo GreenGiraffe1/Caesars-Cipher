@@ -13,8 +13,8 @@ html, body {
 }
 .subject, .body, .character-shift {
     margin-top: 2em;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 0;
+    margin-right: 0;
 }
 .cycle {
     height: 5em;
@@ -78,5 +78,9 @@ body {
   .header, .footer {
     padding-left: 0;
     padding-right: 0;
+  }
+  .subject, .body, .character-shift {
+      margin-left: 2em;
+      margin-right: 2em;
   }
 }
