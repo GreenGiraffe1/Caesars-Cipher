@@ -35,7 +35,7 @@ textarea {
     background-color: transparent;
 }
 .subject-input {
-    width: 75%;
+    width: 100%;
 }
 .msg-reminder {
     color: red;
@@ -82,5 +82,8 @@ body {
   .subject, .body, .character-shift {
       margin-left: 2em;
       margin-right: 2em;
+  }
+  .subject-input {
+      width: 75%;
   }
 }
