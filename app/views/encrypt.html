@@ -33,6 +33,6 @@
 </div>
 
 <div class="convert">
-    <button class="cycle" ng-click="encrypt.toggleCrypt(encrypt.charShift)" type="button" name="encrypt">Encrypt</button>
-    <button class="cycle" ng-click="encrypt.toggleCrypt(encrypt.charShift * (-1))" type="button" name="decrypt">Decrypt</button>
+    <button class="cycle" ng-if="encrypt.cryptState === 1" ng-click="encrypt.toggleCrypt(encrypt.charShift)" type="button" name="encrypt">Encrypt</button>
+    <button class="cycle" ng-if="encrypt.cryptState === -1" ng-click="encrypt.toggleCrypt(encrypt.charShift * (-1))" type="button" name="decrypt">Decrypt</button>
 </div>
