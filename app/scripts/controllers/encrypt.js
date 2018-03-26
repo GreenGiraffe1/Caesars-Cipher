@@ -9,8 +9,10 @@
  */
 angular.module('secretCipherApp')
     .controller('EncryptCtrl', function () {
-        this.subject = 'Introducition to Caesar\'s "The Conquest of Gaul"';
-        this.message = 'All Gaul (modern France) is divided into three parts, one of which the Belgae inhabit, the Aquitani another, those who in their own language are called Celts, in our Gauls, the third. All these differ from each other in language, customs and laws. The river Garonne separates the Gauls from the Aquitani; the Marne and the Seine separate them from the Belgae.';
+        // this.subject = 'Introduction to Caesar\'s "The Conquest of Gaul"';
+        this.subject = 'Fkqolarzqflk ql Zxbpxo\'p "Qeb Zlknrbpq lc Dxri"';
+        // this.message = 'All Gaul (modern France) is divided into three parts, one of which the Belgae inhabit, the Aquitani another, those who in their own language are called Celts, in our Gauls, the third. All these differ from each other in language, customs and laws. The river Garonne separates the Gauls from the Aquitani; the Marne and the Seine separate them from the Belgae.';
+        this.message = 'Xii Dxri (jlabok Coxkzb) fp afsfaba fkql qeobb mxoqp, lkb lc tefze qeb Ybidxb fkexyfq, qeb Xnrfqxkf xklqebo, qelpb tel fk qebfo ltk ixkdrxdb xob zxiiba Zbiqp, fk lro Dxrip, qeb qefoa. Xii qebpb afccbo colj bxze lqebo fk ixkdrxdb, zrpqljp xka ixtp. Qeb ofsbo Dxolkkb pbmxoxqbp qeb Dxrip colj qeb Xnrfqxkf; qeb Jxokb xka qeb Pbfkb pbmxoxqb qebj colj qeb Ybidxb.';
         this.shift = [1,2,3
             ,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26];
         this.charShift = 23;
