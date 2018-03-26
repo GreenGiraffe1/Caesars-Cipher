@@ -23,6 +23,7 @@ angular.module('secretCipherApp')
 
             this.subject = this.caesar(this.subject,num);
             this.message = this.caesar(this.message,num);
+            this.cryptState *= -1;
         }
         this.caesar = function(string,shift) {
                         
