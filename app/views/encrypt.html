@@ -1,37 +1,24 @@
 <div class="intro">
-    <!-- <h3>Generate a coded message to send to a friend.</h3>
-    <p>[Instructions will go here]</p> -->
-    <!-- <p>The first emperor of Rome, Gaius Julius Caesar, was a great general before he assumed the throne. It was through his battlefield successes, and canny political maneuvering that he became what all in the Roman republic had feared since its founding 500 years before. A single man with absolute authority.</p>
-    <br>
-    <p>To communicate with his generals and initiate political intrigues he used coded messages. The method was so effective, and closely associated with him that it bears his name to this day. The "Caesar Cipher" obscures a message by shifting each letter by a secret number of characters. Today this encryption is easily cracked with the aide of computers, but it continues to be used in online forums as a way to hide spoilers, punchlines, and offensive materials from the casual glance.</p>
-    <br>
-    <p>Put your friends to the test - write a secret message and see if they can decipher it!</p> -->
-    
     <p>Julius Caesar was a great general and politician, but he had many enemies. He encoded his communications to frustrate their spies. Caesar's method was so effective that it still bears his name. It obscures a message by shifting each letter by a secret number of characters. Though not secure today,  it continues to be used in online forums to hide spoilers and nsfw content from unintentional viewing. It's pattern is easily recognizable to computers, and can even be discerned with a keen eye. </p>
     <br>
-    <!-- <p>Today his encryption technique is easily compromised with the use of computers, or even by an individual with a very keen eye may detect the pattern. Put your friends to the test - write a secret message and see if they can break Caesar's Cipher!</p> -->
     <p>Put your friends to the test. Write a secret message and see if they can break Caesar's Cipher!</p>
 
 </div>
-
 <div class="subject">
     <h4><b>Subject:</b></h4>
     <input class="subject-input" ng-model="encrypt.subject" type="text" name="subject" value="{{encrypt.subject}}">
 </div>
-
 <div class="body">
     <h4><b>Message:</b></h4>
     <textarea name="msgBody" ng-model="encrypt.message" rows="6" cols="80">{{encrypt.message}}</textarea>
     <p class="msg-reminder" ng-if="encrypt.message === ''">Must enter a message </p>
 </div>
-
 <div class="character-shift">
     <h4><b>How many letters should the characters be shifted?</b></h4>
     <select class="" ng-model="encrypt.charShift" ng-options="x for x in encrypt.shift" name="">
         
     </select>
 </div>
-
 <div class="convert">
     <button class="cycle" ng-if="encrypt.cryptState === 1" ng-click="encrypt.toggleCrypt(encrypt.charShift)" type="button" name="encrypt">Encrypt</button>
     <button class="cycle" ng-if="encrypt.cryptState === -1" ng-click="encrypt.toggleCrypt(encrypt.charShift * (-1))" type="button" name="decrypt">Decrypt</button>
