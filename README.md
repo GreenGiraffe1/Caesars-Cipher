@@ -6,6 +6,8 @@ Caesar's Cipher is a single-page Angular web app for creating encrypted messages
 ## Usage
 
 ## Attribution
+[Yeoman](yeoman.io) was used for scaffolding, and routine development chores.
+
 The tiled parchment map background image was sourced from pixabay.com user [ChadoNihi](https://pixabay.com/en/users/ChadoNihi-634818/).  It was obtained under the CC0 license, and can be found [here](https://pixabay.com/en/map-background-parchment-seamless-574792/).
 
 ## License:
