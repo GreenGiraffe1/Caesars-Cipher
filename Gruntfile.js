@@ -30,6 +30,8 @@ module.exports = function (grunt) {
   
   //  Load the buildcontrol plugin
   grunt.loadNpmTasks('grunt-build-control');
+  
+  grunt.loadNpmTasks('grunt-dev-update');
 
   // Define the configuration for all the tasks
   grunt.initConfig({
@@ -455,6 +457,22 @@ module.exports = function (grunt) {
         options: {
           remote: '../',
           branch: 'build'
+        }
+      }
+    },
+    //  grunt-dev-update task with all default options specified - documentation found here: https://www.npmjs.com/package/grunt-dev-update
+    devUpdate: {
+      main: {
+        options: {
+          updateType: 'report', //just report outdated packages
+          reportUpdated: false, //don't report up-to-date packages
+          semver: true, //stay within semver when updating
+          packages: {
+            devDependencies: true, //only check for devDependencies
+            dependencies: false
+          },
+          packageJson: null, //use matchdep default findup to locate package.json
+          reportOnlyPkgs: [] //use updateType action on all packages
         }
       }
     }
