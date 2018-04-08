@@ -1,4 +1,4 @@
-// Generated on 2018-03-02 using generator-angular 0.16.0
+// Generated on 2018-04-08 using generator-angular 0.16.0
 'use strict';
 
 // # Globbing
@@ -8,9 +8,6 @@
 // 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
-
-  //  Important dependencies for grunt buildcontrol
-  var pkg = require('./package.json');
 
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
@@ -27,11 +24,6 @@ module.exports = function (grunt) {
     app: require('./bower.json').appPath || 'app',
     dist: 'dist'
   };
-  
-  //  Load the buildcontrol plugin
-  grunt.loadNpmTasks('grunt-build-control');
-  
-  grunt.loadNpmTasks('grunt-dev-update');
 
   // Define the configuration for all the tasks
   grunt.initConfig({
@@ -346,7 +338,7 @@ module.exports = function (grunt) {
     ngtemplates: {
       dist: {
         options: {
-          module: 'secretCipherApp',
+          module: 'caesarsCipherApp',
           htmlmin: '<%= htmlmin.dist.options %>',
           usemin: 'scripts/scripts.js'
         },
@@ -430,50 +422,6 @@ module.exports = function (grunt) {
       unit: {
         configFile: 'test/karma.conf.js',
         singleRun: true
-      }
-    },
-    //  buildcontrol code
-    buildcontrol: {
-      options: {
-        dir: 'dist',
-        commit: true,
-        push: true,
-        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
-      },
-      pages: {
-        options: {
-          remote: 'git@github.com:GreenGiraffe1/Caesars-Cipher.git',
-          branch: 'gh-pages'
-        }
-      },
-      heroku: {
-        options: {
-          remote: 'git@heroku.com:example-heroku-webapp-1988.git',
-          branch: 'master',
-          tag: pkg.version
-        }
-      },
-      local: {
-        options: {
-          remote: '../',
-          branch: 'build'
-        }
-      }
-    },
-    //  grunt-dev-update task with all default options specified - documentation found here: https://www.npmjs.com/package/grunt-dev-update
-    devUpdate: {
-      main: {
-        options: {
-          updateType: 'report', //just report outdated packages
-          reportUpdated: false, //don't report up-to-date packages
-          semver: true, //stay within semver when updating
-          packages: {
-            devDependencies: true, //only check for devDependencies
-            dependencies: false
-          },
-          packageJson: null, //use matchdep default findup to locate package.json
-          reportOnlyPkgs: [] //use updateType action on all packages
-        }
       }
     }
   });
