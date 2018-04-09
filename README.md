@@ -3,25 +3,26 @@ Caesar's Cipher is a single-page Angular web app for creating encrypted
 messages to share with friends.
 
 ## Setup
-Install Yeoman, npm, bower, nodejs. 
+To develop this application further on your own follow these steps to set it up
+on your local machine:
 
-clone files to local machine.
-
-Run ```yo angular [appname]```.  Answer the questions:
-* No
-* No
-* Yes
-
-For Modules to include, keep the defaults
-
-When prompted whether you want to overwrite duplicate files answer **NO** to
-each prompt.
+* Make sure you have Node and NPM installed and updated
+* Install Yeoman, Bower, and the Angular generator plugin:
+    * ```npm install -g grunt-cli bower yo generator-karma generator-angular```
+* Clone the files in this repository to your local machine
+* From the directory where you clone the files run ```yo angular [app-name]```
+  and give it your own name
+* Next you'll be asked a series of questions. Answer as follows:
+    * "Would you like to use Gulp (experimental) instead of Grunt?": **No**
+    * "Would you like to use Sass (with Compass)?": **No**
+    * "Would you like to include Bootstrap?": **Yes**
+* Now you'll be given a list of Angular modules and asked to choose which ones
+  to include in the project.  Accept the defaults which are pre-checked.
+* Finally you'll be asked whether you want to overwrite a several files.
+  Reply **No** to each prompt.
 
 At the end of this process you'll be able to run ```grunt serve``` and the
-app will be served locally for development debugging.  
-
-For grunt fuctions refer to its [documentation](https://gruntjs.com/).
-
+app will be served locally for developmental debugging.  
 
 ## Usage
 When the page is initially loaded the subject & message areas are encrypted
@@ -31,7 +32,8 @@ the "Encrypt" button.  You now have a coded message to puzzle your friends.
 Enjoy!
 
 ## Attribution
-[Yeoman](yeoman.io) was used for scaffolding the App, and
+This App was built around the [AngularJS](https://angularjs.org/) framework.
+[Yeoman](yeoman.io) was used for scaffolding the it, and
 [Grunt](https://gruntjs.com/) was used for testing and development chores.
 The Grunt plugin
 [grunt-build-control](https://github.com/robwierzbowski/grunt-build-control)
@@ -39,8 +41,6 @@ was used for minifying and versioning the app.
 The tiled parchment map background image was sourced from pixabay.com user [ChadoNihi](https://pixabay.com/en/users/ChadoNihi-634818/).  It was obtained
 under the CC0 license, and can be found
 [here](https://pixabay.com/en/map-background-parchment-seamless-574792/).
-
-* Add angular attribution
 
 ## License:
 **Caesar's Cipher** is an open source project created under the
