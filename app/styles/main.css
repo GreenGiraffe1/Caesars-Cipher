@@ -66,7 +66,6 @@ textarea {
 }
 .msg-reminder {
     color: red;
-    padding-left: 10%;
 }
 .trunk {
     min-height: calc(100% - 75px - 100px);
