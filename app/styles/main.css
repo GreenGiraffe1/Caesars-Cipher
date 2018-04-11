@@ -75,6 +75,7 @@ textarea {
 body {
   padding: 0;
   font-family: 'Quattrocento', serif;
+  font-size: 16px;
   /* background-image: url("../images/seamless_parchment_texture_by_fantasystock.jpg"); */
   background-image: url("../images/map-574792_1920.jpg");
   background-repeat: repeat;
