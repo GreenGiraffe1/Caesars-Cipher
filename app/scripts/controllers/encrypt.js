@@ -20,6 +20,9 @@ angular.module('secretCipherApp')
         this.clearFields = function() {
             this.subject = '';
             this.message = '';
+            if (this.cryptState === -1) {
+                this.cryptState *= -1;
+            }
         }
         this.toggleCrypt = function(num) {
             this.subject = this.caesar(this.subject,num);
