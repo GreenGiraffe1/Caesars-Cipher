@@ -22,33 +22,23 @@ angular.module('secretCipherApp')
             this.message = '';
         }
         this.toggleCrypt = function(num) {
-            // if (this.message === '') {
-            //     alert('Must enter a message before taking that action.');
-            //     return;
-            // }
-
             this.subject = this.caesar(this.subject,num);
             this.message = this.caesar(this.message,num);
             this.cryptState *= -1;
         }
         this.caesar = function(string,shift) {
-                        
             var stringArray = string.split('');
             var newStringArray = [];
-            
             // TAKE CARE OF NEGATIVE SHIFTS HERE !!!!!!!!  (input will be restricted to 1-26)
             if (shift < 0) {
                 shift = 26 + shift;
             }
-            
             // Iterates over and prints all letters of string 
             for (var i = 0; i < stringArray.length; i++) {
-                
                 var oldValue = stringArray[i];
                 var oldAsciiNum = oldValue.charCodeAt();
                 //  Set base-case for new ASCII code
                 var newAsciiNum = 0;
-                
                 // Transform Upper-Case characters
                 if (91 > oldAsciiNum && oldAsciiNum > 64) {
                     if ((oldAsciiNum + shift) > 90) {
@@ -57,7 +47,6 @@ angular.module('secretCipherApp')
                         newAsciiNum = oldAsciiNum + shift;
                     }
                 }
-                
                 // Transform Lower-Case characters
                 if (123 > oldAsciiNum && oldAsciiNum > 96) {
                     if ((oldAsciiNum + shift) > 122) {
@@ -66,7 +55,6 @@ angular.module('secretCipherApp')
                         newAsciiNum = oldAsciiNum + shift;
                     }
                 }
-
                 // Append new characters and pass through non-alphabetic ones
                 if (newAsciiNum !== 0) {
                     var newValue = String.fromCharCode(newAsciiNum);
@@ -75,7 +63,6 @@ angular.module('secretCipherApp')
                     newStringArray.push(oldValue);
                 }
             }
-
             // Join the array of new letters into the resultant string
             var newString = newStringArray.join('');
             // alert(newString);
