@@ -12,6 +12,7 @@
     <h4><b>Message:</b></h4>
     <textarea name="msgBody" ng-model="encrypt.message" rows="6" cols="80">{{encrypt.message}}</textarea>
     <p class="msg-reminder" ng-if="encrypt.message === ''">Please enter a message.</p>
+    <button class="clear-fields" ng-if="encrypt.message !== '' || encrypt.subject !== ''" ng-click="encrypt.clearFields()" type="button" name="encrypt">Clear Message</button>
 </div>
 <div class="character-shift">
     <h4><b>How many letters should the characters be shifted?</b></h4>
