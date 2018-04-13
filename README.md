@@ -38,6 +38,13 @@ This App was built around the [AngularJS](https://angularjs.org/) framework.
 The Grunt plugin
 [grunt-build-control](https://github.com/robwierzbowski/grunt-build-control)
 was used for minifying and versioning the app.
+[Google-webfonts-helper](https://github.com/majodev/google-webfonts-helper) was
+used to simplify self-hosting Google Fonts.
+This project makes use of the Google Fonts
+[Quattrocento](https://fonts.google.com/specimen/Quattrocento) and
+[Cormorant SC](https://fonts.google.com/specimen/Cormorant+SC). Both were
+obtained under the
+[Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web).
 The tiled parchment map background image was sourced from pixabay.com user [ChadoNihi](https://pixabay.com/en/users/ChadoNihi-634818/).  It was obtained
 under the CC0 license, and can be found
 [here](https://pixabay.com/en/map-background-parchment-seamless-574792/).
